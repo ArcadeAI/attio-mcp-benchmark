@@ -23,7 +23,7 @@ files = [
     ("05", "05-technology-companies.json"),
     ("06", "06-deals-by-close-date.json"),
     ("07", "07-compound-filter.json"),
-    ("08", "08-sort-and-limit.js"),
+    ("08", "08-sort-and-limit.json"),
 ]
 
 print(f"\n{'#':<4} {'File':<40} {'Tokens':>8} {'Records':>8}")

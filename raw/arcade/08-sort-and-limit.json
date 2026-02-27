@@ -1,0 +1,11 @@
+{
+  "tool": "Attio_QueryRecords",
+  "parameters": {
+    "object_type": "deals",
+    "fields": ["name", "value", "associated_company"],
+    "sort_by": "value",
+    "sort_direction": "desc",
+    "limit": 1
+  },
+  "response": {"pagination":{"count":1,"has_more":true,"limit":1,"offset":0},"records":[{"associated_company":"83bfe8c7-696f-59b5-b683-096eac6c97b9","name":"Berkshire Hathaway - Enterprise Platform","record_id":"a4b8e64f-ad13-49b4-960f-89bb1eb5a3ee","value":480000}]}
+}

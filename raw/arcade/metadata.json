@@ -1,7 +1,7 @@
 {
   "runner": "arcade-attio-mcp",
   "tool": "Attio_QueryRecords",
-  "run_date": "2026-02-26",
+  "run_date": "2026-02-27",
   "queries": [
     {
       "id": "01",
@@ -13,7 +13,8 @@
         "fields": ["name"],
         "limit": 25
       },
-      "record_count": 10,
+      "record_count": 25,
+      "has_more": true,
       "status": "success"
     },
     {
@@ -26,9 +27,8 @@
         "fields": ["name", "stage"],
         "filter_json": {"stage": {"$eq": "Nurture"}}
       },
-      "record_count": null,
-      "status": "error",
-      "error": "Attio API error: Unknown status for status field constraint: Nurture. Path: ['stage']"
+      "record_count": 22,
+      "status": "success"
     },
     {
       "id": "03",
@@ -40,7 +40,8 @@
         "fields": ["name", "value"],
         "filter_json": {"value": {"$gt": 50000}}
       },
-      "record_count": 0,
+      "record_count": 25,
+      "has_more": true,
       "status": "success"
     },
     {
@@ -53,7 +54,7 @@
         "fields": ["name"],
         "filter_json": {"name": {"$contains": "Tech"}}
       },
-      "record_count": 0,
+      "record_count": 8,
       "status": "success"
     },
     {
@@ -66,9 +67,10 @@
         "fields": ["name", "categories"],
         "filter_json": {"categories": {"$eq": "Technology"}}
       },
-      "record_count": 7,
+      "record_count": 25,
+      "has_more": true,
       "status": "success",
-      "notes": "Filter returned 7 records; 4 of those display non-Technology categories in the response — possible multi-value category field truncation in tool output"
+      "notes": "Attio's built-in 'categories' is a multi-value field. Filter matches any company with 'Technology' as one of its categories, but the response only shows the first/primary category value per record."
     },
     {
       "id": "06",
@@ -80,26 +82,27 @@
         "fields": ["name", "created_at", "value"],
         "filter_json": {"created_at": {"$lt": "2026-03-01T00:00:00Z"}}
       },
-      "record_count": 0,
+      "record_count": 25,
+      "has_more": true,
       "status": "success"
     },
     {
       "id": "07",
       "file": "raw/arcade/07-compound-filter.json",
-      "description": "Find Technology companies with employee_range '201-500' or higher, return name + categories + employee_range",
+      "description": "Find Technology companies with employee_range 1K+ (compound AND/OR filter), return name + categories + employee_range",
       "tool": "Attio_QueryRecords",
       "parameters": {
         "object_type": "companies",
         "fields": ["name", "categories", "employee_range"],
         "filter_json": {"$and": [{"categories": {"$eq": "Technology"}}, {"$or": [{"employee_range": {"$eq": "1K-5K"}}, {"employee_range": {"$eq": "5K-10K"}}, {"employee_range": {"$eq": "10K-50K"}}, {"employee_range": {"$eq": "50K-100K"}}, {"employee_range": {"$eq": "100K+"}}]}]}
       },
-      "record_count": 6,
-      "status": "success",
-      "notes": "Workspace uses different employee_range options (1K-5K, 5K-10K, 10K-50K, 50K-100K, 100K+) than the expected seeded values. Used all ranges representing 200+ employees. Initial attempt with '501-1000' failed: 'Unknown select option name'."
+      "record_count": 25,
+      "has_more": true,
+      "status": "success"
     },
     {
       "id": "08",
-      "file": "raw/arcade/08-sort-and-limit.js",
+      "file": "raw/arcade/08-sort-and-limit.json",
       "description": "Get the single highest-value deal, sort by value desc, limit 1, return name + value + associated_company",
       "tool": "Attio_QueryRecords",
       "parameters": {
@@ -109,7 +112,7 @@
         "sort_direction": "desc",
         "limit": 1
       },
-      "record_count": 0,
+      "record_count": 1,
       "status": "success"
     }
   ]
