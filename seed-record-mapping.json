@@ -1,0 +1,514 @@
+{
+  "companies": [
+    {
+      "record_id": "b157348d-4f09-4ebe-80c5-9e92d3e10de0",
+      "name": "Apple Inc.",
+      "idx": 0
+    },
+    {
+      "record_id": "d8a9ee68-06eb-45d6-af31-9d96d60513d1",
+      "name": "Microsoft Corporation",
+      "idx": 1
+    },
+    {
+      "record_id": "67103053-702e-55d4-b4f4-196b8186151c",
+      "name": "Alphabet Inc.",
+      "idx": 2
+    },
+    {
+      "record_id": "df225b1f-ff1f-5a02-af3e-9f7f547fa1b7",
+      "name": "Meta Platforms, Inc.",
+      "idx": 3
+    },
+    {
+      "record_id": "c23c08cc-957f-5ed0-aab8-7d699c579aa5",
+      "name": "NVIDIA Corporation",
+      "idx": 4
+    },
+    {
+      "record_id": "03e7d757-3cec-5040-96ba-cd66e7292719",
+      "name": "Broadcom Inc.",
+      "idx": 5
+    },
+    {
+      "record_id": "55c55238-7668-5b48-a180-577e9f819209",
+      "name": "Oracle Corporation",
+      "idx": 6
+    },
+    {
+      "record_id": "b7390834-c3a7-5788-9092-704f84d6d14c",
+      "name": "Salesforce, Inc.",
+      "idx": 7
+    },
+    {
+      "record_id": "1758caae-7d7d-5e45-8233-d2f051945da2",
+      "name": "Cisco Systems, Inc.",
+      "idx": 8
+    },
+    {
+      "record_id": "eeaa6fba-faf3-56c2-80db-65d6f0525272",
+      "name": "International Business Machines Corporation",
+      "idx": 9
+    },
+    {
+      "record_id": "1a84f3f1-114c-594f-8e80-ab6ad94be1bc",
+      "name": "Intel Corporation",
+      "idx": 10
+    },
+    {
+      "record_id": "fe2a6514-4225-5af6-8ad2-0af01a279d87",
+      "name": "Qualcomm Incorporated",
+      "idx": 11
+    },
+    {
+      "record_id": "2e97ad25-1e9b-5ed3-9431-6af6cc9ed630",
+      "name": "Adobe Inc.",
+      "idx": 12
+    },
+    {
+      "record_id": "3e14a574-ecfe-547e-b787-5cd799641b81",
+      "name": "Netflix, Inc.",
+      "idx": 13
+    },
+    {
+      "record_id": "627f3d3f-554e-57a5-ad17-81c0ee996a59",
+      "name": "Advanced Micro Devices, Inc.",
+      "idx": 14
+    },
+    {
+      "record_id": "83922f47-fac3-5ee7-97b1-c0732a043201",
+      "name": "DXC Technology Company",
+      "idx": 15
+    },
+    {
+      "record_id": "145f2a95-20cd-5169-8e2d-eaeb94a7df6f",
+      "name": "Roper Technologies, Inc.",
+      "idx": 16
+    },
+    {
+      "record_id": "1744b656-b4e8-5680-ac36-f3b330bbcf4d",
+      "name": "Agilent Technologies, Inc.",
+      "idx": 17
+    },
+    {
+      "record_id": "4ee214fc-b223-5def-aee5-7aa2e1a0136e",
+      "name": "Zebra Technologies Corporation",
+      "idx": 18
+    },
+    {
+      "record_id": "44e7c64e-fc6a-52f4-9774-e5fdfb835562",
+      "name": "Lumen Technologies, Inc.",
+      "idx": 19
+    },
+    {
+      "record_id": "79228e84-d519-5b3b-889e-73bea7db3c15",
+      "name": "Seagate Technology Holdings plc",
+      "idx": 20
+    },
+    {
+      "record_id": "7bf7d705-302b-52c1-a364-f38ebfc2c1e3",
+      "name": "Microchip Technology Incorporated",
+      "idx": 21
+    },
+    {
+      "record_id": "51032b49-6c1a-5c9f-ae8e-1df6ff7eb5fb",
+      "name": "Marvell Technology, Inc.",
+      "idx": 22
+    },
+    {
+      "record_id": "9e9fcaac-4803-58f3-afb7-ea1b97db9bb7",
+      "name": "UnitedHealth Group Incorporated",
+      "idx": 23
+    },
+    {
+      "record_id": "b9a10e97-fa85-5f4d-9cd6-e7fb4be40a55",
+      "name": "Johnson & Johnson",
+      "idx": 24
+    },
+    {
+      "record_id": "9f3d4b2e-a1d5-596d-bb35-886f068c9a2b",
+      "name": "Pfizer Inc.",
+      "idx": 25
+    },
+    {
+      "record_id": "94873e8a-e692-548d-8f01-c41246903d17",
+      "name": "Elevance Health, Inc.",
+      "idx": 26
+    },
+    {
+      "record_id": "32b98c7d-7ec8-5065-92a4-98b2e6dc2a00",
+      "name": "CVS Health Corporation",
+      "idx": 27
+    },
+    {
+      "record_id": "ffcea856-0a1d-56a7-b4f9-4a294ca69562",
+      "name": "Abbott Laboratories",
+      "idx": 28
+    },
+    {
+      "record_id": "0ed95245-0448-55a1-bbd9-a53ef242091a",
+      "name": "JPMorgan Chase & Co.",
+      "idx": 29
+    },
+    {
+      "record_id": "42a77dca-1667-56fb-9479-f81108de85c4",
+      "name": "Goldman Sachs Group, Inc.",
+      "idx": 30
+    },
+    {
+      "record_id": "6b208d97-6cc5-5cef-ac86-01e8680785b1",
+      "name": "Morgan Stanley",
+      "idx": 31
+    },
+    {
+      "record_id": "b64cce02-81f3-5dbc-a50f-c0e59ed4a0eb",
+      "name": "Bank of America Corporation",
+      "idx": 32
+    },
+    {
+      "record_id": "31cb6fdf-c238-5f23-a719-fd55541408af",
+      "name": "Visa Inc.",
+      "idx": 33
+    },
+    {
+      "record_id": "83bfe8c7-696f-59b5-b683-096eac6c97b9",
+      "name": "Berkshire Hathaway Inc.",
+      "idx": 34
+    },
+    {
+      "record_id": "ffef57f0-6641-5c69-bcc0-b39882b44539",
+      "name": "Exxon Mobil Corporation",
+      "idx": 35
+    },
+    {
+      "record_id": "5195d42b-06c4-5c5c-b55c-ad21e08702e6",
+      "name": "Chevron Corporation",
+      "idx": 36
+    },
+    {
+      "record_id": "adba3221-fb1c-55cb-9400-540518550b42",
+      "name": "ConocoPhillips",
+      "idx": 37
+    },
+    {
+      "record_id": "4061d06b-a4d9-532d-9313-3c73fe6ae966",
+      "name": "NextEra Energy, Inc.",
+      "idx": 38
+    },
+    {
+      "record_id": "cc448da2-1871-5728-bb79-00c628c4ab60",
+      "name": "Duke Energy Corporation",
+      "idx": 39
+    },
+    {
+      "record_id": "ca78da15-9abd-5751-b11e-b0288d3c3838",
+      "name": "Walmart Inc.",
+      "idx": 40
+    },
+    {
+      "record_id": "43b74670-6573-5127-aa74-155a8adac572",
+      "name": "Amazon.com, Inc.",
+      "idx": 41
+    },
+    {
+      "record_id": "f7610149-5fac-556f-8217-ca48aeeb2306",
+      "name": "Costco Wholesale Corporation",
+      "idx": 42
+    },
+    {
+      "record_id": "9d93ecd3-ee32-56f2-98bf-4da8387585dd",
+      "name": "The Home Depot, Inc.",
+      "idx": 43
+    },
+    {
+      "record_id": "5325f056-25a2-526c-8764-d4f4bbe77e35",
+      "name": "The Procter & Gamble Company",
+      "idx": 44
+    },
+    {
+      "record_id": "420a352c-2e9c-5478-8579-f4ac327d9552",
+      "name": "Lockheed Martin Corporation",
+      "idx": 45
+    },
+    {
+      "record_id": "ffea23c6-f7d2-5465-bcb8-d00416e1ce16",
+      "name": "Caterpillar Inc.",
+      "idx": 46
+    },
+    {
+      "record_id": "2cefd08a-3700-52b0-b133-0dbeaedb8e33",
+      "name": "3M Company",
+      "idx": 47
+    },
+    {
+      "record_id": "8614af3c-12b8-5fb7-be99-9b27d7b649eb",
+      "name": "FedEx Corporation",
+      "idx": 48
+    },
+    {
+      "record_id": "df738ea3-f67f-5dcb-9783-dc94ae37bd73",
+      "name": "The Boeing Company",
+      "idx": 49
+    }
+  ],
+  "deals": [
+    {
+      "record_id": "1a01bedd-1d74-43c7-828e-5e74c193b235",
+      "name": "Apple - Enterprise License Agreement",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "b28066c3-be65-41fa-8119-43615a783f7c",
+      "name": "Microsoft - Cloud Migration Suite",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "0021c599-bb84-4e7e-bd78-de3d96123fdf",
+      "name": "UnitedHealth - Data Platform",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "5951d33d-694f-4cbc-b7e1-44641851431a",
+      "name": "JPMorgan - Risk Analytics",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "0db233f9-4e7f-4dea-a1fc-38974e9209af",
+      "name": "Lockheed Martin - IoT Sensors",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "5b8336d0-e495-451e-845a-b0c2983b0dfe",
+      "name": "Alphabet - AI Infrastructure",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "e58ca995-4116-4661-92b6-eecd44d3b16f",
+      "name": "Intel - Analytics Tier",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "fcbb4aff-827f-41c1-a836-3f869fdcaa61",
+      "name": "Johnson & Johnson - Portal",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "c1a10a5a-a91c-4567-9c91-caa51c30abd7",
+      "name": "NextEra Energy - Grid Monitor",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "5bd2fe68-8c93-4de7-b093-ffc00d1322a0",
+      "name": "Walmart - POS Integration",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "d6f1037f-0264-412f-a506-b87182f3ddbf",
+      "name": "Goldman Sachs - Compliance",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "1e25b915-842a-4fef-b909-27bc4b6d1b64",
+      "name": "Zebra Technologies - Starter Plan",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "b7682860-e6fd-467b-80e8-f99580962ea8",
+      "name": "Broadcom - Security Audit Tool",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "79346df1-f181-43ad-8dc9-413ec443675d",
+      "name": "Abbott - Lab Module",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "5314b097-2786-4593-bfd5-2afa6d89f050",
+      "name": "Morgan Stanley - Trading Platform",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "bfed5b80-f6a5-4691-aa09-b01b7b9a71cd",
+      "name": "Caterpillar - QA Suite",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "bc1ad74e-b1b4-4d3b-a50d-67db6666d220",
+      "name": "Netflix - Content Platform",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "d2e66f16-9dd5-4a5f-bc5f-3a405c0ef829",
+      "name": "Duke Energy - Turbine Monitor",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "79bd5248-e93b-45ab-8d0e-078ace1de18b",
+      "name": "Costco - Inventory System",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "9bada772-8973-4e66-b888-f1d827e92a4d",
+      "name": "Adobe - CMS Integration",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "f221dc38-5e57-4c3a-a705-f14fbb788dcc",
+      "name": "Visa - Payment Gateway",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "a6b84013-25c1-4e35-bbbb-1bf705a95204",
+      "name": "DXC Technology - Data Pipeline",
+      "stage": "Nurture"
+    },
+    {
+      "record_id": "d81b420a-f867-4819-9cff-26c191b3b3e5",
+      "name": "Qualcomm - Dev License",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "ad7a5a4f-0999-43d0-9c7c-46ad2068fd8f",
+      "name": "AMD - Starter Pack",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "215739d2-89c2-4d14-a5f5-20bb980c48ad",
+      "name": "Bank of America - Trading Platform",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "08392b22-b719-4503-9c33-4767ec554bf2",
+      "name": "Boeing - ERP Module",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "beee040c-17f3-4f66-a04f-d6a900ab2605",
+      "name": "Pfizer - Research Platform",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "8626726c-7419-4d2e-820f-89f7b63b7225",
+      "name": "ConocoPhillips - Dashboard",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "8f1a02c9-8bad-4da2-9b7d-e2da119a1a13",
+      "name": "CVS Health - Telehealth",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "68370b3b-06c7-4b41-a6e3-933452f95d56",
+      "name": "Chevron - Analytics Dashboard",
+      "stage": "Qualified"
+    },
+    {
+      "record_id": "1e895a59-4954-41a3-a6a4-90300f200489",
+      "name": "Home Depot - Inventory AI",
+      "stage": "Proposal"
+    },
+    {
+      "record_id": "6014538a-d232-4ec5-bb7f-a83e14033565",
+      "name": "Lumen Technologies - Platform",
+      "stage": "Proposal"
+    },
+    {
+      "record_id": "4d2ec139-762c-4ad1-9317-88b81414b16b",
+      "name": "Exxon Mobil - Supply Chain",
+      "stage": "Proposal"
+    },
+    {
+      "record_id": "88340bdc-20cd-45b4-8157-f41ca006c37a",
+      "name": "3M - Quality Control",
+      "stage": "Proposal"
+    },
+    {
+      "record_id": "8edfce57-a3d6-4f9d-b46e-1b6c2070f5ef",
+      "name": "Seagate Technology - Render Farm",
+      "stage": "Proposal"
+    },
+    {
+      "record_id": "8bec6ab9-2645-45a8-93ab-32a50cad2472",
+      "name": "Marvell Technology - ML Toolkit",
+      "stage": "Proposal"
+    },
+    {
+      "record_id": "6ad461cb-3aa4-47a9-8e9d-52ad5989d82c",
+      "name": "FedEx - Logistics Platform",
+      "stage": "Negotiation"
+    },
+    {
+      "record_id": "f74ef92d-e9c9-44cf-a7d4-6e3297232724",
+      "name": "Elevance Health - Claims System",
+      "stage": "Negotiation"
+    },
+    {
+      "record_id": "7cd4158c-1c7c-4d61-8d31-e501a53545ac",
+      "name": "Amazon - API Infrastructure",
+      "stage": "Negotiation"
+    },
+    {
+      "record_id": "376dea0f-fbd4-4c4f-84db-d0da9d92855a",
+      "name": "P&G - Analytics Platform",
+      "stage": "Negotiation"
+    },
+    {
+      "record_id": "7059d34c-a174-4956-b8eb-22898053ff15",
+      "name": "Meta - Developer Tools",
+      "stage": "Closed Won"
+    },
+    {
+      "record_id": "93734192-738e-4678-8b3f-1b6dbcf5293e",
+      "name": "NVIDIA - GPU Compute License",
+      "stage": "Closed Won"
+    },
+    {
+      "record_id": "629547cf-fcdd-4984-ba9c-00bfc4550d11",
+      "name": "Cisco - Network Monitor",
+      "stage": "Closed Won"
+    },
+    {
+      "record_id": "a4b8e64f-ad13-49b4-960f-89bb1eb5a3ee",
+      "name": "Berkshire Hathaway - Enterprise Platform",
+      "stage": "Closed Won"
+    },
+    {
+      "record_id": "4b0fc005-93ab-4473-96f3-0bdbeb1001a0",
+      "name": "Oracle - Cloud Integration",
+      "stage": "Closed Won"
+    },
+    {
+      "record_id": "720ab67c-eda0-4ada-99bc-e58e694d2809",
+      "name": "Salesforce - Platform Extension",
+      "stage": "Closed Won"
+    },
+    {
+      "record_id": "5b3553bf-c416-43eb-bd64-a850468ca5cd",
+      "name": "IBM - Consulting Engagement",
+      "stage": "Closed Lost"
+    },
+    {
+      "record_id": "f724a8e0-4f44-4274-9bb2-ba31b774a984",
+      "name": "Microchip Technology - Dev Tools",
+      "stage": "Closed Lost"
+    },
+    {
+      "record_id": "994b3736-8a71-4bfb-8a9e-9dc1ae6a750d",
+      "name": "Roper Technologies - SaaS Module",
+      "stage": "Closed Lost"
+    },
+    {
+      "record_id": "b18eb52e-2e57-4f2e-8a69-abdce4e82764",
+      "name": "Agilent Technologies - Lab System",
+      "stage": "Closed Lost"
+    }
+  ],
+  "metadata": {
+    "total_companies": 50,
+    "total_deals": 50,
+    "total_company_custom_attrs": 15,
+    "total_deal_custom_attrs": 11,
+    "script_version": "2.0",
+    "data_source": "Fortune 100 + public company data"
+  }
+}

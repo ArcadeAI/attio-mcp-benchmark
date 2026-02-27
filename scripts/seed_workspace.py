@@ -90,7 +90,8 @@ client = httpx.Client(base_url=BASE_URL, headers=HEADERS, timeout=30)
 
 COMPANY_CUSTOM_ATTRIBUTES = [
     {"title": "Industry", "api_slug": "industry", "type": "select",
-     "description": "Primary industry vertical"},
+     "description": "Primary industry vertical",
+     "options": ["Technology", "Healthcare", "Finance", "Energy", "Retail", "Industrial"]},
     {"title": "Employee Count", "api_slug": "employee_count", "type": "number",
      "description": "Approximate number of employees"},
     {"title": "Annual Revenue", "api_slug": "annual_revenue", "type": "currency",
@@ -104,17 +105,21 @@ COMPANY_CUSTOM_ATTRIBUTES = [
     {"title": "Tech Stack", "api_slug": "tech_stack", "type": "text",
      "description": "Known technologies in use"},
     {"title": "Lead Source", "api_slug": "lead_source", "type": "select",
-     "description": "How this company entered the pipeline"},
+     "description": "How this company entered the pipeline",
+     "options": ["Benchmark Seed", "Inbound", "Outbound", "Referral"]},
     {"title": "ICP Score", "api_slug": "icp_score", "type": "number",
      "description": "Ideal customer profile score (0-100)"},
     {"title": "Last Contacted", "api_slug": "last_contacted", "type": "date",
      "description": "Date of last outreach or interaction"},
     {"title": "Account Tier", "api_slug": "account_tier", "type": "select",
-     "description": "Account classification by size"},
+     "description": "Account classification by size",
+     "options": ["Enterprise", "Mid-Market", "SMB"]},
     {"title": "Funding Stage", "api_slug": "funding_stage", "type": "select",
-     "description": "Current funding stage"},
+     "description": "Current funding stage",
+     "options": ["Public", "Series A", "Series B", "Series C", "Seed"]},
     {"title": "Contract Status", "api_slug": "contract_status", "type": "select",
-     "description": "Current contract status"},
+     "description": "Current contract status",
+     "options": ["Prospect", "Active", "Churned"]},
     {"title": "Primary Use Case", "api_slug": "primary_use_case", "type": "text",
      "description": "Primary product use case for this account"},
     {"title": "Renewal Date", "api_slug": "renewal_date", "type": "date",
@@ -123,7 +128,8 @@ COMPANY_CUSTOM_ATTRIBUTES = [
 
 DEAL_CUSTOM_ATTRIBUTES = [
     {"title": "Lead Source", "api_slug": "deal_lead_source", "type": "select",
-     "description": "How this deal originated"},
+     "description": "How this deal originated",
+     "options": ["Benchmark Seed", "Inbound", "Outbound", "Referral"]},
     {"title": "Next Step", "api_slug": "next_step", "type": "text",
      "description": "Next action item for this deal"},
     {"title": "Champion", "api_slug": "champion", "type": "text",
@@ -135,11 +141,13 @@ DEAL_CUSTOM_ATTRIBUTES = [
     {"title": "Contract Length (Months)", "api_slug": "contract_length_months", "type": "number",
      "description": "Proposed contract duration in months"},
     {"title": "Security Review Status", "api_slug": "security_review_status", "type": "select",
-     "description": "Status of security/compliance review"},
+     "description": "Status of security/compliance review",
+     "options": ["Not Started", "In Progress", "Passed", "Failed"]},
     {"title": "Probability", "api_slug": "probability", "type": "number",
      "description": "Win probability percentage (0-100)"},
     {"title": "Loss Reason", "api_slug": "loss_reason", "type": "select",
-     "description": "Reason deal was lost"},
+     "description": "Reason deal was lost",
+     "options": ["Competitor", "Price", "Timing", "Feature Gap", "No Decision"]},
     {"title": "Onboarding Date", "api_slug": "onboarding_date", "type": "date",
      "description": "Target onboarding start date"},
     {"title": "Close Date", "api_slug": "close_date", "type": "date",
@@ -356,66 +364,77 @@ def validate_scenarios():
 # Phase 1: Create custom attributes
 # ---------------------------------------------------------------------------
 
+def _attr_payload(attr):
+    """Build the Attio v2 attribute creation payload."""
+    if attr["type"] == "currency":
+        config = {"currency": {"default_currency_code": "USD", "display_type": "symbol"}}
+    else:
+        config = {}
+    return {
+        "data": {
+            "title": attr["title"],
+            "api_slug": attr["api_slug"],
+            "type": attr["type"],
+            "description": attr.get("description", ""),
+            "is_required": False,
+            "is_unique": False,
+            "is_multiselect": False,
+            "config": config,
+        }
+    }
+
+
 def create_custom_attributes():
     """Create custom attributes on companies and deals objects."""
     print("=" * 60)
     print("Phase 1: Creating custom attributes")
     print("=" * 60)
 
-    # Companies
-    print(f"\nCompanies ({len(COMPANY_CUSTOM_ATTRIBUTES)} attributes):")
-    for attr in COMPANY_CUSTOM_ATTRIBUTES:
-        payload = {
-            "data": {
-                "title": attr["title"],
-                "api_slug": attr["api_slug"],
-                "type": attr["type"],
-                "description": attr.get("description", ""),
-                "is_required": False,
-                "is_unique": False,
-                "is_multiselect": False,
-            }
-        }
-        result = api_call("POST", "/objects/companies/attributes", payload, attr["title"])
-        if result and not result.get("conflict"):
-            print(f"  + {attr['title']} ({attr['type']})")
-        elif result and result.get("conflict"):
-            print(f"  ~ {attr['title']} (already exists)")
-        else:
-            print(f"  ! {attr['title']} (failed)")
+    created = set()
 
-    # Deals
-    print(f"\nDeals ({len(DEAL_CUSTOM_ATTRIBUTES)} attributes):")
-    for attr in DEAL_CUSTOM_ATTRIBUTES:
-        payload = {
-            "data": {
-                "title": attr["title"],
-                "api_slug": attr["api_slug"],
-                "type": attr["type"],
-                "description": attr.get("description", ""),
-                "is_required": False,
-                "is_unique": False,
-                "is_multiselect": False,
-            }
-        }
-        result = api_call("POST", "/objects/deals/attributes", payload, attr["title"])
-        if result and not result.get("conflict"):
-            print(f"  + {attr['title']} ({attr['type']})")
-        elif result and result.get("conflict"):
-            print(f"  ~ {attr['title']} (already exists)")
-        else:
-            print(f"  ! {attr['title']} (failed)")
+    for object_slug, attrs in [("companies", COMPANY_CUSTOM_ATTRIBUTES), ("deals", DEAL_CUSTOM_ATTRIBUTES)]:
+        label = object_slug.capitalize()
+        print(f"\n{label} ({len(attrs)} attributes):")
+        for attr in attrs:
+            result = api_call("POST", f"/objects/{object_slug}/attributes", _attr_payload(attr), attr["title"])
+            if result and not result.get("conflict"):
+                print(f"  + {attr['title']} ({attr['type']})")
+                created.add((object_slug, attr["api_slug"]))
+            elif result and result.get("conflict"):
+                print(f"  ~ {attr['title']} (already exists)")
+                created.add((object_slug, attr["api_slug"]))
+            else:
+                print(f"  ! {attr['title']} (failed)")
+                continue
+
+            # Create select options via the options endpoint
+            for opt in attr.get("options", []):
+                opt_result = api_call(
+                    "POST",
+                    f"/objects/{object_slug}/attributes/{attr['api_slug']}/options",
+                    {"data": {"title": opt}},
+                    f"option:{opt}",
+                )
+                if opt_result and not opt_result.get("conflict"):
+                    pass  # silently succeed
+                elif not opt_result:
+                    print(f"    ! option '{opt}' failed")
+
+    return created
 
 
 # ---------------------------------------------------------------------------
 # Phase 2: Create companies
 # ---------------------------------------------------------------------------
 
-def create_companies():
+def create_companies(created_attrs):
     """Create 50 companies using assert (upsert on domain)."""
     print("\n" + "=" * 60)
     print("Phase 2: Creating companies")
     print("=" * 60)
+
+    def has(slug):
+        return ("companies", slug) in created_attrs
 
     company_records = []
     for i, c in enumerate(COMPANIES):
@@ -425,24 +444,27 @@ def create_companies():
             "description": [{"value": c["description"]}],
         }
 
-        # Custom attributes — Attio v2 requires typed array format
-        if c.get("employee_count"):
+        # Custom attributes — only include if successfully created in Phase 1
+        if has("employee_count") and c.get("employee_count"):
             values["employee_count"] = [{"value": c["employee_count"]}]
-        if c.get("annual_revenue_b"):
-            values["annual_revenue"] = [{"currency_value": c["annual_revenue_b"] * 1_000_000_000, "currency_code": "USD"}]
-        if c.get("founded_year"):
+        if has("annual_revenue") and c.get("annual_revenue_b"):
+            values["annual_revenue"] = c["annual_revenue_b"] * 1_000_000_000
+        if has("founded_year") and c.get("founded_year"):
             values["founded_year"] = [{"value": c["founded_year"]}]
-        if c.get("headquarters"):
+        if has("headquarters") and c.get("headquarters"):
             values["headquarters"] = [{"value": c["headquarters"]}]
-        if c.get("industry"):
-            values["industry"] = [{"option": {"title": c["industry"]}}]
-
-        # Enrichment-style fields
-        values["lead_source"] = [{"option": {"title": "Benchmark Seed"}}]
-        values["account_tier"] = [{"option": {"title": "Enterprise" if c.get("employee_count", 0) > 50000 else "Mid-Market"}}]
-        values["funding_stage"] = [{"option": {"title": "Public"}}]
-        values["contract_status"] = [{"option": {"title": "Prospect"}}]
-        values["icp_score"] = [{"value": min(100, max(10, c.get("employee_count", 100) // 1000 + 40))}]
+        if has("industry") and c.get("industry"):
+            values["industry"] = [{"option": c["industry"]}]
+        if has("lead_source"):
+            values["lead_source"] = [{"option": "Benchmark Seed"}]
+        if has("account_tier"):
+            values["account_tier"] = [{"option": "Enterprise" if c.get("employee_count", 0) > 50000 else "Mid-Market"}]
+        if has("funding_stage"):
+            values["funding_stage"] = [{"option": "Public"}]
+        if has("contract_status"):
+            values["contract_status"] = [{"option": "Prospect"}]
+        if has("icp_score"):
+            values["icp_score"] = [{"value": min(100, max(10, c.get("employee_count", 100) // 1000 + 40))}]
 
         payload = {"data": {"values": values}}
 
@@ -492,7 +514,7 @@ def create_people(company_records):
             email = f"{first.lower().replace(' ', '')}.{last.lower().replace(' ', '')}@{domain}"
 
             values = {
-                "name": [{"first_name": first, "last_name": last}],
+                "name": [{"full_name": f"{first} {last}", "first_name": first, "last_name": last}],
                 "email_addresses": [{"email_address": email}],
                 "job_title": [{"value": exec_data["title"]}],
                 "company": [{"target_object": "companies", "target_record_id": company_id}],
@@ -511,8 +533,8 @@ def create_people(company_records):
                 if people_created <= 5 or people_created % 20 == 0:
                     print(f"  [{people_created:3d}] {first} {last} ({exec_data['title']}) @ {c['name']}")
             else:
-                # Don't fail the whole script over contact creation errors
-                pass
+                if people_created == 0:
+                    print(f"  FAILED: {first} {last} — {result}")
 
     print(f"\n  Total people created: {people_created}")
     return people_created
@@ -522,24 +544,30 @@ def create_people(company_records):
 # Phase 4: Create deals
 # ---------------------------------------------------------------------------
 
-def create_deals(company_records):
+def create_deals(company_records, created_attrs, owner_id):
     """Create 50 deals with associations to companies."""
     print("\n" + "=" * 60)
     print("Phase 4: Creating deals")
     print("=" * 60)
 
+    def has(slug):
+        return ("deals", slug) in created_attrs
+
     deal_records = []
     for i, d in enumerate(DEALS):
         values = {
             "name": [{"value": d["name"]}],
+            # Required fields: stage + owner
+            "stage": [{"status": d["stage"]}],
+            "owner": [{"referenced_actor_type": "workspace-member", "referenced_actor_id": owner_id}],
         }
 
-        # Deal value — built-in currency field
+        # Deal value — built-in currency field (plain number)
         if d.get("value"):
-            values["value"] = [{"currency_value": d["value"], "currency_code": "USD"}]
+            values["value"] = d["value"]
 
         # Close date — custom date attribute
-        if d.get("close_date"):
+        if has("close_date") and d.get("close_date"):
             values["close_date"] = [{"value": d["close_date"]}]
 
         # Associated company
@@ -550,21 +578,21 @@ def create_deals(company_records):
                 "target_record_id": company_records[company_idx]["record_id"],
             }]
 
-        # Custom deal attributes — Attio v2 typed array format
-        if d.get("champion"):
+        # Custom deal attributes — only include if created in Phase 1
+        if has("champion") and d.get("champion"):
             values["champion"] = [{"value": d["champion"]}]
-        if d.get("use_case"):
+        if has("use_case") and d.get("use_case"):
             values["use_case"] = [{"value": d["use_case"]}]
-        if d.get("next_step"):
+        if has("next_step") and d.get("next_step"):
             values["next_step"] = [{"value": d["next_step"]}]
-        if d.get("probability") is not None:
+        if has("probability") and d.get("probability") is not None:
             values["probability"] = [{"value": d["probability"]}]
-        if d.get("contract_months"):
+        if has("contract_length_months") and d.get("contract_months"):
             values["contract_length_months"] = [{"value": d["contract_months"]}]
-        if d.get("loss_reason"):
-            values["loss_reason"] = [{"option": {"title": d["loss_reason"]}}]
-
-        values["deal_lead_source"] = [{"option": {"title": "Benchmark Seed"}}]
+        if has("loss_reason") and d.get("loss_reason"):
+            values["loss_reason"] = [{"option": d["loss_reason"]}]
+        if has("deal_lead_source"):
+            values["deal_lead_source"] = [{"option": "Benchmark Seed"}]
 
         payload = {"data": {"values": values}}
         result = api_call("POST", "/objects/deals/records", payload, d["name"])
@@ -573,10 +601,6 @@ def create_deals(company_records):
             record_id = result["data"]["id"]["record_id"]
             deal_records.append({"record_id": record_id, "name": d["name"], "stage": d["stage"]})
             print(f"  [{i+1:2d}/50] {d['name']} (${d['value']:,}) -> {record_id[:12]}...")
-
-            # Update stage — status fields require typed array format
-            stage_payload = {"data": {"values": {"stage": [{"status": {"title": d["stage"]}}]}}}
-            api_call("PATCH", f"/objects/deals/records/{record_id}", stage_payload, f"stage:{d['stage']}")
         else:
             deal_records.append(None)
             print(f"  [{i+1:2d}/50] FAILED: {d['name']}")
@@ -614,11 +638,24 @@ def main():
     print(f"  Connected as workspace: {test.get('data', {}).get('workspace', {}).get('name', 'unknown')}")
     print()
 
+    # Get workspace member ID for deal ownership
+    workspace_members = api_call("GET", "/workspace_members", label="list members")
+    owner_id = None
+    if workspace_members and "data" in workspace_members:
+        for member in workspace_members["data"]:
+            owner_id = member["id"]["workspace_member_id"]
+            print(f"  Deal owner: {member.get('first_name', '')} {member.get('last_name', '')} ({owner_id[:12]}...)")
+            break
+    if not owner_id:
+        print("ERROR: Could not find a workspace member for deal ownership.")
+        sys.exit(1)
+    print()
+
     # Run phases
-    create_custom_attributes()
-    company_records = create_companies()
+    created_attrs = create_custom_attributes()
+    company_records = create_companies(created_attrs)
     create_people(company_records)
-    deal_records = create_deals(company_records)
+    deal_records = create_deals(company_records, created_attrs, owner_id)
 
     # Save mapping
     output_dir = os.path.dirname(os.path.abspath(__file__))
