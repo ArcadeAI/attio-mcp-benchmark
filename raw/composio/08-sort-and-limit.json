@@ -1,0 +1,227 @@
+{
+  "successful": true,
+  "data": {
+    "data": [
+      {
+        "created_at": "2026-02-27T07:49:52.911000000Z",
+        "id": {
+          "object_id": "6bb66fc1-4caa-4f08-90f9-d4ccd4242b8a",
+          "record_id": "a4b8e64f-ad13-49b4-960f-89bb1eb5a3ee",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "associated_company": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "companies",
+              "target_record_id": "83bfe8c7-696f-59b5-b683-096eac6c97b9"
+            }
+          ],
+          "associated_people": [],
+          "champion": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "VP Technology"
+            }
+          ],
+          "close_date": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2025-08-10"
+            }
+          ],
+          "competitor": [],
+          "contract_length_months": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 36
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:49:52.911000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "deal_lead_source": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "c98df7d8-6da4-45fa-b822-9e0146337a97",
+                  "object_id": "6bb66fc1-4caa-4f08-90f9-d4ccd4242b8a",
+                  "option_id": "576c522b-b71e-4132-88df-a58e1cd4cb55",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "loss_reason": [],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Berkshire Hathaway - Enterprise Platform"
+            }
+          ],
+          "next_step": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Phase 2 planning"
+            }
+          ],
+          "onboarding_date": [],
+          "owner": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "ee12dfd9-69a9-4288-9828-df5319d4655d",
+              "referenced_actor_type": "workspace-member"
+            }
+          ],
+          "probability": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 100
+            }
+          ],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "a4b8e64f-ad13-49b4-960f-89bb1eb5a3ee"
+            }
+          ],
+          "security_review_status": [],
+          "stage": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "status",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "status": {
+                "celebration_enabled": false,
+                "id": {
+                  "attribute_id": "2a3ce3ef-2259-412e-a11a-a81c0b32b414",
+                  "object_id": "6bb66fc1-4caa-4f08-90f9-d4ccd4242b8a",
+                  "status_id": "5b2588ff-e197-4a20-a2a1-25e4357c0922",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "target_time_in_status": null,
+                "title": "Closed Won"
+              }
+            }
+          ],
+          "use_case": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Cross-subsidiary data platform"
+            }
+          ],
+          "value": [
+            {
+              "active_from": "2026-02-27T07:49:52.911000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 480000
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/deals/record/a4b8e64f-ad13-49b4-960f-89bb1eb5a3ee"
+      }
+    ]
+  }
+}

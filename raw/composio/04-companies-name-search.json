@@ -1,0 +1,4734 @@
+{
+  "successful": true,
+  "data": {
+    "data": [
+      {
+        "created_at": "2026-02-27T07:08:18.521000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "145f2a95-20cd-5169-8e2d-eaeb94a7df6f",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "514e9bb1-4091-4120-b8e2-1b84b3817507",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Mid-Market"
+              }
+            }
+          ],
+          "angellist": [],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 8000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:49:59.263000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "994b3736-8a71-4bfb-8a9e-9dc1ae6a750d"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:18.943000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.943000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.943000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.943000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df6f671d-437f-49c2-b49c-32aefc23daeb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Machinery"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.943000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:18.521000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:18.521000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:18.521000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:18.521000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Diversified industrial company providing application-specific software and technology-enabled products."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:18.521000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "ropertech.com",
+              "root_domain": "ropertech.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 18000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:18.943000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "c81dd300-bca3-48e4-bdb0-0eead6f65d78",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "10K-50K"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:18.943000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f239b80d-6cb0-4f2a-89e1-ce3377d721a3",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$1B-$10B"
+              }
+            }
+          ],
+          "facebook": [],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:18.942000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "1890-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 1981
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Sarasota, FL"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 58
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:46.363000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:18.942000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/roper-industries"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:18.941000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/3fc4a78c-beb9-4846-8387-e511b309fe8a"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:18.521000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Roper Technologies, Inc."
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:18.942000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "US",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "27.384845",
+              "line_1": "6496 University Parkway",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "Sarasota",
+              "longitude": "-82.43218",
+              "postcode": "34240",
+              "region": "Florida"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:18.521000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "145f2a95-20cd-5169-8e2d-eaeb94a7df6f"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:35:00.282000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "28dca0a5-2a43-5a3c-8b58-e0e9e34aa76d"
+            },
+            {
+              "active_from": "2026-02-27T07:34:58.504000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "b5eaa412-93fe-5eea-9498-160023cd7f2b"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [],
+          "twitter_follower_count": []
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/145f2a95-20cd-5169-8e2d-eaeb94a7df6f"
+      },
+      {
+        "created_at": "2026-02-27T07:08:19.285000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "1744b656-b4e8-5680-ac36-f3b330bbcf4d",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "514e9bb1-4091-4120-b8e2-1b84b3817507",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Mid-Market"
+              }
+            }
+          ],
+          "angellist": [
+            {
+              "active_from": "2026-02-27T07:08:19.790000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://angel.co/agilent-technologies"
+            }
+          ],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 7000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:50:01.160000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "b18eb52e-2e57-4f2e-8a69-abdce4e82764"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "923cfec0-8d89-454c-bbbe-c6e0b87b2ac2",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "993c060a-0dff-4850-9e2f-74eb2bf155c1",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Chemicals"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "daf9402a-3b52-46c9-9cd4-4ad1bd956f05",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Biotechnology"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "ea203dbe-d5fc-48fb-8f7c-4c2677b58aab",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Pharmaceuticals"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:19.285000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:19.285000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:19.285000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:19.285000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Life sciences and diagnostics company providing instruments, software, and services for laboratories."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:19.285000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "agilent.com",
+              "root_domain": "agilent.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 18000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "c81dd300-bca3-48e4-bdb0-0eead6f65d78",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "10K-50K"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f239b80d-6cb0-4f2a-89e1-ce3377d721a3",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$1B-$10B"
+              }
+            }
+          ],
+          "facebook": [
+            {
+              "active_from": "2026-02-27T07:08:19.790000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://facebook.com/agilent.tech"
+            }
+          ],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:19.791000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "1999-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 1999
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Santa Clara, CA"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 58
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:47.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:19.790000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/agilent-technologies"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:19.790000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/7d96c4e3-3862-40cf-b07d-22c59f8b5422"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:19.285000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Agilent Technologies, Inc."
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:19.790000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "US",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "37.3248859",
+              "line_1": "5301 Stevens Creek Boulevard",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "Santa Clara",
+              "longitude": "-121.998857",
+              "postcode": "95051",
+              "region": "California"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:19.285000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "1744b656-b4e8-5680-ac36-f3b330bbcf4d"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:35:03.270000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "e6841137-b249-5afe-b582-808488b354ca"
+            },
+            {
+              "active_from": "2026-02-27T07:35:01.897000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "5c350e9b-c90c-5cf3-8c98-6e01768baa06"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [
+            {
+              "active_from": "2026-02-27T07:08:19.790000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://x.com/Agilent"
+            }
+          ],
+          "twitter_follower_count": [
+            {
+              "active_from": "2026-02-27T07:08:19.790000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": 29903
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/1744b656-b4e8-5680-ac36-f3b330bbcf4d"
+      },
+      {
+        "created_at": "2026-02-27T07:08:21.442000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "44e7c64e-fc6a-52f4-9774-e5fdfb835562",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "514e9bb1-4091-4120-b8e2-1b84b3817507",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Mid-Market"
+              }
+            }
+          ],
+          "angellist": [],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 12000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:49:33.658000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "6014538a-d232-4ec5-bb7f-a83e14033565"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "5a8974db-3a58-4307-a19b-01ab86de4017",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2C"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "923cfec0-8d89-454c-bbbe-c6e0b87b2ac2",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "881972ce-3258-4a47-bdb9-0be98b10d8c7",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Internet"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "85b248da-65f0-4248-97c7-ae66964112e0",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "ISP"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "c5503e99-6af3-42b6-8138-e1fd55b60bcc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Telecommunications"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:21.442000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:21.442000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:21.442000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:21.442000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Telecommunications company providing fiber networking, cloud connectivity, and enterprise security solutions."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:21.442000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "lumen.com",
+              "root_domain": "lumen.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 24000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "c81dd300-bca3-48e4-bdb0-0eead6f65d78",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "10K-50K"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "05a90dab-301d-4391-b49a-7bb47aa722f0",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$10B+"
+              }
+            }
+          ],
+          "facebook": [],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "1930-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 1930
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Monroe, LA"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 64
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:50.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:21.893000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/lumentechnologies"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:21.892000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/0243bf48-a8b1-47a9-abc8-b88dd0f84e6e"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:21.442000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Lumen Technologies, Inc."
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:21.893000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "US",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "32.4986528",
+              "line_1": "601 Wood Street",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "West Monroe",
+              "longitude": "-92.1261737",
+              "postcode": "71291",
+              "region": "Louisiana"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:21.442000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "44e7c64e-fc6a-52f4-9774-e5fdfb835562"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:35:09.143000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "b8856a60-e9cd-5166-b9fa-c7772de925e1"
+            },
+            {
+              "active_from": "2026-02-27T07:35:07.849000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "88644ef8-225d-5629-82e0-7189e9775882"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [
+            {
+              "active_from": "2026-02-27T07:08:21.893000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://x.com/lumentechco"
+            }
+          ],
+          "twitter_follower_count": [
+            {
+              "active_from": "2026-02-27T07:08:21.894000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": 6762
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/44e7c64e-fc6a-52f4-9774-e5fdfb835562"
+      },
+      {
+        "created_at": "2026-02-27T07:08:20.276000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "4ee214fc-b223-5def-aee5-7aa2e1a0136e",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "514e9bb1-4091-4120-b8e2-1b84b3817507",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Mid-Market"
+              }
+            }
+          ],
+          "angellist": [
+            {
+              "active_from": "2026-02-27T07:08:20.601000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://angel.co/zebra-technologies"
+            }
+          ],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 5000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:48:04.449000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "1e25b915-842a-4fef-b909-27bc4b6d1b64"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "060f430e-e158-4945-886e-fbdf8edf39b6",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Industrials & Manufacturing"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "77bce0c0-d4f8-4f6c-937b-84d2bb51d64a",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Computer Hardware"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "923cfec0-8d89-454c-bbbe-c6e0b87b2ac2",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b6b0580f-4a1d-405c-b0d8-5e16f689ae7e",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Health & Wellness"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "7a001f1d-f6bf-4c4f-8a92-961f3c6da563",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Retail"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:20.276000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:20.276000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:20.276000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:20.276000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Enterprise asset intelligence company providing barcode printers, scanners, and RFID solutions."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:20.276000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "zebra.com",
+              "root_domain": "zebra.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 10000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "c81dd300-bca3-48e4-bdb0-0eead6f65d78",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "10K-50K"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:20.602000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f239b80d-6cb0-4f2a-89e1-ce3377d721a3",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$1B-$10B"
+              }
+            }
+          ],
+          "facebook": [
+            {
+              "active_from": "2026-02-27T07:08:20.601000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://facebook.com/107703715989073"
+            }
+          ],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:20.601000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "1969-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 1969
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Lincolnshire, IL"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 50
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:49.682000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:20.601000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/zebra-technologies"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:20.600000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/ac75b999-011e-44a5-b552-eca76ae41c05"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:20.276000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Zebra Technologies Corporation"
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:20.601000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "US",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "42.187545",
+              "line_1": "3 Overlook Point",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "Lincolnshire",
+              "longitude": "-87.933509",
+              "postcode": "60069",
+              "region": "Illinois"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:20.276000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "4ee214fc-b223-5def-aee5-7aa2e1a0136e"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:35:06.708000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "efd3d303-30ca-56ff-b6e2-349122c3e021"
+            },
+            {
+              "active_from": "2026-02-27T07:35:05.237000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "22ed83d1-a44a-5421-ac8b-416512b06507"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [
+            {
+              "active_from": "2026-02-27T07:08:20.601000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://x.com/ZebraTechnology"
+            }
+          ],
+          "twitter_follower_count": [
+            {
+              "active_from": "2026-02-27T07:08:20.601000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": 33564
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/4ee214fc-b223-5def-aee5-7aa2e1a0136e"
+      },
+      {
+        "created_at": "2026-02-27T07:08:24.371000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "51032b49-6c1a-5c9f-ae8e-1df6ff7eb5fb",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "514e9bb1-4091-4120-b8e2-1b84b3817507",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Mid-Market"
+              }
+            }
+          ],
+          "angellist": [],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 6000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:49:41.325000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "8bec6ab9-2645-45a8-93ab-32a50cad2472"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "85b248da-65f0-4248-97c7-ae66964112e0",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "ISP"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "923cfec0-8d89-454c-bbbe-c6e0b87b2ac2",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "77bce0c0-d4f8-4f6c-937b-84d2bb51d64a",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Computer Hardware"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:24.371000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:24.371000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:24.371000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:24.371000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Semiconductor company designing data infrastructure chips for cloud, enterprise networking, and 5G."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:24.371000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "marvell.com",
+              "root_domain": "marvell.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 7000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "ffc94219-6d51-486b-b15b-43665dfeb4ad",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "5K-10K"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f239b80d-6cb0-4f2a-89e1-ce3377d721a3",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$1B-$10B"
+              }
+            }
+          ],
+          "facebook": [
+            {
+              "active_from": "2026-02-27T07:08:24.956000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://facebook.com/96462647125"
+            }
+          ],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:24.957000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "1995-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 1995
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Wilmington, DE"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 47
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:56.570000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:24.956000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/marvell"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:24.956000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/ac1c862b-2db2-405f-9fa3-b86b0d858a8c"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:24.371000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Marvell Technology, Inc."
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:24.956000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "US",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "39.7374175",
+              "line_1": "West Street",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "Wilmington",
+              "longitude": "-75.5585155",
+              "postcode": "19801",
+              "region": "Delaware"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:24.371000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "51032b49-6c1a-5c9f-ae8e-1df6ff7eb5fb"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:37:39.907000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "614e587b-5b91-5b88-a0df-9f389acfcc4a"
+            },
+            {
+              "active_from": "2026-02-27T07:35:15.892000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "05c67da9-87cf-5cc5-971a-0728257f6ab7"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [
+            {
+              "active_from": "2026-02-27T07:08:24.956000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://x.com/MarvellTech"
+            }
+          ],
+          "twitter_follower_count": [
+            {
+              "active_from": "2026-02-27T07:08:24.956000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": 8018
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/51032b49-6c1a-5c9f-ae8e-1df6ff7eb5fb"
+      },
+      {
+        "created_at": "2026-02-27T07:08:22.311000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "79228e84-d519-5b3b-889e-73bea7db3c15",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "514e9bb1-4091-4120-b8e2-1b84b3817507",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Mid-Market"
+              }
+            }
+          ],
+          "angellist": [
+            {
+              "active_from": "2026-02-27T07:08:23.072000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://angel.co/seagate-technology"
+            }
+          ],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 10000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:49:39.597000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "8edfce57-a3d6-4f9d-b46e-1b6c2070f5ef"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f3ce163d-5e6b-45a9-8d34-a76de8310356",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "E-commerce"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "77bce0c0-d4f8-4f6c-937b-84d2bb51d64a",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Computer Hardware"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "5a8974db-3a58-4307-a19b-01ab86de4017",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2C"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "923cfec0-8d89-454c-bbbe-c6e0b87b2ac2",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:22.311000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:22.311000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:22.311000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:22.311000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Data storage company manufacturing hard disk drives and solid-state drives for enterprise and consumer markets."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:22.311000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "seagate.com",
+              "root_domain": "seagate.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 30000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:23.074000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "c81dd300-bca3-48e4-bdb0-0eead6f65d78",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "10K-50K"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:23.073000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f239b80d-6cb0-4f2a-89e1-ce3377d721a3",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$1B-$10B"
+              }
+            }
+          ],
+          "facebook": [
+            {
+              "active_from": "2026-02-27T07:08:23.072000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://facebook.com/seagate"
+            }
+          ],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:23.073000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "1979-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 1978
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Fremont, CA"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 70
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:53.069000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:23.071000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/seagate-technology"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:23.071000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/cf16ccdb-52e6-43ac-aa55-e32bd6858008"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:22.311000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Seagate Technology Holdings plc"
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:23.071000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "IE",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "53.3354927",
+              "line_1": "38/39 Fitzwilliam Square West #2 l2",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "Dublin 2",
+              "longitude": "-6.2536405",
+              "postcode": null,
+              "region": "County Dublin"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:22.311000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "79228e84-d519-5b3b-889e-73bea7db3c15"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:35:10.644000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "ab873269-4429-597d-94e5-a71cda5820dd"
+            },
+            {
+              "active_from": "2026-02-27T07:35:12.471000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "e51a1b11-2025-5a7b-a00f-2ef6bb42a9fe"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [
+            {
+              "active_from": "2026-02-27T07:08:23.071000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://x.com/Seagate"
+            }
+          ],
+          "twitter_follower_count": [
+            {
+              "active_from": "2026-02-27T07:08:23.072000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": 189920
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/79228e84-d519-5b3b-889e-73bea7db3c15"
+      },
+      {
+        "created_at": "2026-02-27T07:08:23.312000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "7bf7d705-302b-52c1-a364-f38ebfc2c1e3",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "514e9bb1-4091-4120-b8e2-1b84b3817507",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Mid-Market"
+              }
+            }
+          ],
+          "angellist": [
+            {
+              "active_from": "2026-02-27T07:08:23.761000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://angel.co/microchip-technology"
+            }
+          ],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 4000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:49:57.901000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "f724a8e0-4f44-4274-9bb2-ba31b774a984"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:23.762000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "77bce0c0-d4f8-4f6c-937b-84d2bb51d64a",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Computer Hardware"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.762000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.762000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.762000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.762000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:23.762000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "923cfec0-8d89-454c-bbbe-c6e0b87b2ac2",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:23.312000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:23.312000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:23.312000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:23.312000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Semiconductor manufacturer providing microcontrollers and mixed-signal integrated circuits."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:23.312000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "microchip.com",
+              "root_domain": "microchip.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 19000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:23.762000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "c81dd300-bca3-48e4-bdb0-0eead6f65d78",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "10K-50K"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:23.761000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f239b80d-6cb0-4f2a-89e1-ce3377d721a3",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$1B-$10B"
+              }
+            }
+          ],
+          "facebook": [
+            {
+              "active_from": "2026-02-27T07:08:23.761000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://facebook.com/20320981741"
+            }
+          ],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:23.761000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "1989-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 1987
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Chandler, AZ"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 59
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:54.661000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:23.761000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/microchip-technology"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:23.760000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/53cf1809-ee93-4583-afce-91bef5988bca"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:23.312000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Microchip Technology Incorporated"
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:23.760000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "US",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "33.3037696",
+              "line_1": "2355 West Chandler Boulevard",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "Chandler",
+              "longitude": "-111.8823979",
+              "postcode": "85224",
+              "region": "Arizona"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:23.312000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "7bf7d705-302b-52c1-a364-f38ebfc2c1e3"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:35:14.592000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "98acbeaa-acf6-5657-bce3-b0fdf1c23ab6"
+            },
+            {
+              "active_from": "2026-02-27T07:35:13.497000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "320b3443-7c24-516e-aae8-505bd873e06a"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [
+            {
+              "active_from": "2026-02-27T07:08:23.761000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://x.com/MicrochipTech"
+            }
+          ],
+          "twitter_follower_count": [
+            {
+              "active_from": "2026-02-27T07:08:23.761000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": 56233
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/7bf7d705-302b-52c1-a364-f38ebfc2c1e3"
+      },
+      {
+        "created_at": "2026-02-27T07:08:17.646000000Z",
+        "id": {
+          "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+          "record_id": "83922f47-fac3-5ee7-97b1-c0732a043201",
+          "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+        },
+        "values": {
+          "account_tier": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "3684d2fb-3b39-45ca-baa0-a47fe0abef6a",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "9c834ec8-6d0c-4e5a-8c12-4c68ba5a069d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            }
+          ],
+          "angellist": [],
+          "annual_revenue": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "currency",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "currency_code": "USD",
+              "currency_value": 13000000000
+            }
+          ],
+          "associated_deals": [
+            {
+              "active_from": "2026-02-27T07:48:36.185000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "deals",
+              "target_record_id": "a6b84013-25c1-4e35-bbbb-1bf705a95204"
+            }
+          ],
+          "categories": [
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "30fc8b73-980f-4b86-98d1-0582d6ae17dc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Enterprise"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "2571fb10-ee96-4769-bec9-13550c3853ed",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2B"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "923cfec0-8d89-454c-bbbe-c6e0b87b2ac2",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f3ce163d-5e6b-45a9-8d34-a76de8310356",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "E-commerce"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "5a8974db-3a58-4307-a19b-01ab86de4017",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "B2C"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "e4cae9af-82ae-48b8-96a6-d95a282a4bcc",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Consulting & Professional Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "99f79511-853c-40b7-a473-458f2f729219",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Cloud Services"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "b9f1a63a-4790-40ce-adfc-aab37e086bfb",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "SAAS"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "041d4664-9cb5-4cdc-94d0-0ac04ae305fd",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Security"
+              }
+            },
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "6e7add9a-eead-43f6-bdbc-ea8fac59f2ad",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "63146a26-e7e3-4f3c-af32-831e1cdc5a8d",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Information Technology & Services"
+              }
+            }
+          ],
+          "contract_status": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "d7fa8b9f-b209-4462-9e54-abc4b6f6a744",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "43b55128-3d06-41e5-b1ee-ce88fa539c2b",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Prospect"
+              }
+            }
+          ],
+          "created_at": [
+            {
+              "active_from": "2026-02-27T07:08:17.646000000Z",
+              "active_until": null,
+              "attribute_type": "timestamp",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "2026-02-27T07:08:17.646000000Z"
+            }
+          ],
+          "created_by": [
+            {
+              "active_from": "2026-02-27T07:08:17.646000000Z",
+              "active_until": null,
+              "attribute_type": "actor-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "referenced_actor_id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+              "referenced_actor_type": "api-token"
+            }
+          ],
+          "description": [
+            {
+              "active_from": "2026-02-27T07:08:17.646000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Global IT services company providing digital transformation, cloud, security, and analytics services."
+            }
+          ],
+          "domains": [
+            {
+              "active_from": "2026-02-27T07:08:17.646000000Z",
+              "active_until": null,
+              "attribute_type": "domain",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "domain": "dxc.com",
+              "root_domain": "dxc.com"
+            }
+          ],
+          "employee_count": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 120000
+            }
+          ],
+          "employee_range": [
+            {
+              "active_from": "2026-02-27T07:08:18.340000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "69800fc6-b05a-4ece-bb1a-d7cc3dd58e9c",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "f104d685-dde5-4dbd-b96c-c409de159e7c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "100K+"
+              }
+            }
+          ],
+          "estimated_arr_usd": [
+            {
+              "active_from": "2026-02-27T07:08:18.339000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "38390a26-840f-44c0-aa59-de0fa85f61d8",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "05a90dab-301d-4391-b49a-7bb47aa722f0",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "$10B+"
+              }
+            }
+          ],
+          "facebook": [],
+          "first_calendar_interaction": [],
+          "first_email_interaction": [],
+          "first_interaction": [],
+          "foundation_date": [
+            {
+              "active_from": "2026-02-27T07:08:18.339000000Z",
+              "active_until": null,
+              "attribute_type": "date",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "2017-01-01"
+            }
+          ],
+          "founded_year": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 2017
+            }
+          ],
+          "funding_raised_usd": [],
+          "funding_stage": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "2bcad73a-ba34-4a50-a734-c269aa59b9d4",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "df616fe3-2af5-44c3-9e58-51cce302bb1c",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Public"
+              }
+            }
+          ],
+          "headquarters": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "Ashburn, VA"
+            }
+          ],
+          "icp_score": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": 100
+            }
+          ],
+          "industry": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "e317e396-fecd-4858-9d2d-3aca93d181aa",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "070bd429-152a-43ed-a94b-4d6896962d29",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Technology"
+              }
+            }
+          ],
+          "instagram": [],
+          "last_calendar_interaction": [],
+          "last_contacted": [],
+          "last_email_interaction": [],
+          "last_interaction": [],
+          "lead_source": [
+            {
+              "active_from": "2026-02-27T07:31:45.220000000Z",
+              "active_until": null,
+              "attribute_type": "select",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "option": {
+                "id": {
+                  "attribute_id": "851681f8-d535-4936-aab1-610248997766",
+                  "object_id": "f2239e94-6d6b-4152-9d42-1c3ee623f024",
+                  "option_id": "eeefa37e-ba89-44f1-bdb5-2cdc25f7804f",
+                  "workspace_id": "4ddf95e6-0410-4469-92bf-4cd134986e18"
+                },
+                "is_archived": false,
+                "title": "Benchmark Seed"
+              }
+            }
+          ],
+          "linkedin": [
+            {
+              "active_from": "2026-02-27T07:08:18.338000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://linkedin.com/company/dxctechnology"
+            }
+          ],
+          "linkedin_url": [],
+          "logo_url": [
+            {
+              "active_from": "2026-02-27T07:08:18.337000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://brandbadge.clearbit.com/19082997-6045-4ce0-a426-964e26198a5e"
+            }
+          ],
+          "name": [
+            {
+              "active_from": "2026-02-27T07:08:17.646000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "DXC Technology Company"
+            }
+          ],
+          "next_calendar_interaction": [],
+          "next_interaction": [],
+          "primary_location": [
+            {
+              "active_from": "2026-02-27T07:08:18.338000000Z",
+              "active_until": null,
+              "attribute_type": "location",
+              "country_code": "US",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "latitude": "39.0518714",
+              "line_1": "20408 Bashan Drive #231",
+              "line_2": null,
+              "line_3": null,
+              "line_4": null,
+              "locality": "Ashburn",
+              "longitude": "-77.4522827",
+              "postcode": "20147",
+              "region": "Virginia"
+            }
+          ],
+          "primary_use_case": [],
+          "record_id": [
+            {
+              "active_from": "2026-02-27T07:08:17.646000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "value": "83922f47-fac3-5ee7-97b1-c0732a043201"
+            }
+          ],
+          "renewal_date": [],
+          "strongest_connection_strength": [],
+          "strongest_connection_strength_legacy": [],
+          "strongest_connection_user": [],
+          "team": [
+            {
+              "active_from": "2026-02-27T07:34:55.646000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "fbbce5e2-7775-5d9c-941f-6b595b2bd6a6"
+            },
+            {
+              "active_from": "2026-02-27T07:34:57.082000000Z",
+              "active_until": null,
+              "attribute_type": "record-reference",
+              "created_by_actor": {
+                "id": "131708df-6fa8-46c5-a4f3-b77a65938b01",
+                "type": "api-token"
+              },
+              "target_object": "people",
+              "target_record_id": "54e8b82c-5f35-5264-8fa7-ac7eca7d12cf"
+            }
+          ],
+          "tech_stack": [],
+          "test_select_xyz": [],
+          "twitter": [
+            {
+              "active_from": "2026-02-27T07:08:18.338000000Z",
+              "active_until": null,
+              "attribute_type": "text",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": "https://x.com/DXCTechnology"
+            }
+          ],
+          "twitter_follower_count": [
+            {
+              "active_from": "2026-02-27T07:08:18.339000000Z",
+              "active_until": null,
+              "attribute_type": "number",
+              "created_by_actor": {
+                "id": null,
+                "type": "system"
+              },
+              "value": 37982
+            }
+          ]
+        },
+        "web_url": "https://app.attio.com/arcade-sandbox/company/83922f47-fac3-5ee7-97b1-c0732a043201"
+      }
+    ]
+  }
+}

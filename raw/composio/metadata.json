@@ -1,0 +1,187 @@
+{
+  "toolkit": "composio",
+  "toolkit_version": "attio-composio MCP",
+  "run_date": "2026-02-27",
+  "queries": [
+    {
+      "id": "01",
+      "file": "01-list-all-companies.json",
+      "description": "List all companies, limit 25, return name",
+      "tool": "ATTIO_LIST_COMPANIES",
+      "parameters": {
+        "limit": 25
+      },
+      "records_returned": 25,
+      "status": "EXPRESSIBLE",
+      "notes": ""
+    },
+    {
+      "id": "02",
+      "file": "02-deals-by-stage.json",
+      "description": "Find all deals in Nurture stage, return name + stage",
+      "tool": "ATTIO_LIST_DEAL_RECORDS",
+      "parameters": {
+        "filter": {
+          "stage": {
+            "$eq": "Nurture"
+          }
+        },
+        "limit": 500
+      },
+      "records_returned": 22,
+      "status": "EXPRESSIBLE",
+      "notes": ""
+    },
+    {
+      "id": "03",
+      "file": "03-deals-over-50k.json",
+      "description": "Show deals worth more than $50,000, return name + value",
+      "tool": "ATTIO_LIST_DEAL_RECORDS",
+      "parameters": {
+        "filter": {
+          "value": {
+            "$gt": 50000
+          }
+        },
+        "limit": 500
+      },
+      "records_returned": 30,
+      "status": "EXPRESSIBLE",
+      "notes": ""
+    },
+    {
+      "id": "04",
+      "file": "04-companies-name-search.json",
+      "description": "Find companies with Tech in their name, return name",
+      "tool": "ATTIO_LIST_COMPANIES",
+      "parameters": {
+        "filter": {
+          "name": {
+            "$contains": "Tech"
+          }
+        },
+        "limit": 500
+      },
+      "records_returned": 8,
+      "status": "EXPRESSIBLE",
+      "notes": ""
+    },
+    {
+      "id": "05",
+      "file": "05-technology-companies.json",
+      "description": "List all Technology companies, return name + categories",
+      "tool": "ATTIO_LIST_COMPANIES",
+      "parameters": {
+        "filter": {
+          "categories": {
+            "$eq": "Technology"
+          }
+        },
+        "limit": 500
+      },
+      "records_returned": 29,
+      "status": "EXPRESSIBLE",
+      "notes": ""
+    },
+    {
+      "id": "06",
+      "file": "06-deals-by-close-date.json",
+      "description": "Show deals created before 2026-03-01, return name + created_at + value",
+      "tool": "ATTIO_LIST_DEAL_RECORDS",
+      "parameters": {
+        "filter": {
+          "created_at": {
+            "$lt": "2026-03-01T00:00:00.000Z"
+          }
+        },
+        "limit": 500
+      },
+      "records_returned": 50,
+      "status": "EXPRESSIBLE",
+      "notes": ""
+    },
+    {
+      "id": "07",
+      "file": "07-compound-filter.json",
+      "description": "Find Technology companies with 201+ employees, return name + categories + employee_range",
+      "tool": "ATTIO_LIST_COMPANIES",
+      "parameters": {
+        "filter": {
+          "$and": [
+            {
+              "categories": {
+                "$eq": "Technology"
+              }
+            },
+            {
+              "$or": [
+                {
+                  "employee_range": {
+                    "$eq": "5K-10K"
+                  }
+                },
+                {
+                  "employee_range": {
+                    "$eq": "10K-50K"
+                  }
+                },
+                {
+                  "employee_range": {
+                    "$eq": "50K-100K"
+                  }
+                },
+                {
+                  "employee_range": {
+                    "$eq": "100K+"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "limit": 500
+      },
+      "records_returned": 27,
+      "status": "EXPRESSIBLE",
+      "notes": "Workspace uses non-standard employee_range buckets (5K-10K, 10K-50K, 50K-100K, 100K+) instead of standard 201-500/501-1000/1000+. $in operator not supported for select/option fields; used $or+$eq workaround. Two initial attempts failed: (1) $in not supported for option field, (2) wrong option slugs (501-1000 unknown). Third attempt succeeded with actual option titles."
+    },
+    {
+      "id": "08",
+      "file": "08-sort-and-limit.json",
+      "description": "Get the single highest-value deal, sort by value desc, limit 1",
+      "tool": "ATTIO_LIST_DEAL_RECORDS",
+      "parameters": {
+        "sorts": [
+          {
+            "attribute": "value",
+            "direction": "desc"
+          }
+        ],
+        "limit": 1
+      },
+      "records_returned": 1,
+      "status": "EXPRESSIBLE",
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "total_queries": 8,
+    "expressible": 8,
+    "not_expressible": 0,
+    "errors_encountered": 2
+  },
+  "errors_encountered": [
+    {
+      "query": "07",
+      "attempt": 1,
+      "error": "Invalid operator \"$in\" for field \"option\", must be one of (\"$eq\").",
+      "resolution": "Used $or + $eq instead of $in"
+    },
+    {
+      "query": "07",
+      "attempt": 2,
+      "error": "Unknown select option name for option field constraint: 501-1000",
+      "resolution": "Used actual workspace option titles (5K-10K, 10K-50K, etc.) instead of benchmark schema reference values"
+    }
+  ]
+}
