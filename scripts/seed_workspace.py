@@ -142,6 +142,8 @@ DEAL_CUSTOM_ATTRIBUTES = [
      "description": "Reason deal was lost"},
     {"title": "Onboarding Date", "api_slug": "onboarding_date", "type": "date",
      "description": "Target onboarding start date"},
+    {"title": "Close Date", "api_slug": "close_date", "type": "date",
+     "description": "Expected or actual deal close date"},
 ]
 
 
@@ -423,24 +425,24 @@ def create_companies():
             "description": [{"value": c["description"]}],
         }
 
-        # Custom attributes — set as simple values
+        # Custom attributes — Attio v2 requires typed array format
         if c.get("employee_count"):
-            values["employee_count"] = c["employee_count"]
+            values["employee_count"] = [{"value": c["employee_count"]}]
         if c.get("annual_revenue_b"):
-            values["annual_revenue"] = c["annual_revenue_b"] * 1_000_000_000
+            values["annual_revenue"] = [{"currency_value": c["annual_revenue_b"] * 1_000_000_000, "currency_code": "USD"}]
         if c.get("founded_year"):
-            values["founded_year"] = c["founded_year"]
+            values["founded_year"] = [{"value": c["founded_year"]}]
         if c.get("headquarters"):
-            values["headquarters"] = c["headquarters"]
+            values["headquarters"] = [{"value": c["headquarters"]}]
         if c.get("industry"):
-            values["industry"] = c["industry"]
+            values["industry"] = [{"option": {"title": c["industry"]}}]
 
         # Enrichment-style fields
-        values["lead_source"] = "Benchmark Seed"
-        values["account_tier"] = "Enterprise" if c.get("employee_count", 0) > 50000 else "Mid-Market"
-        values["funding_stage"] = "Public"
-        values["contract_status"] = "Prospect"
-        values["icp_score"] = min(100, max(10, c.get("employee_count", 100) // 1000 + 40))
+        values["lead_source"] = [{"option": {"title": "Benchmark Seed"}}]
+        values["account_tier"] = [{"option": {"title": "Enterprise" if c.get("employee_count", 0) > 50000 else "Mid-Market"}}]
+        values["funding_stage"] = [{"option": {"title": "Public"}}]
+        values["contract_status"] = [{"option": {"title": "Prospect"}}]
+        values["icp_score"] = [{"value": min(100, max(10, c.get("employee_count", 100) // 1000 + 40))}]
 
         payload = {"data": {"values": values}}
 
@@ -532,13 +534,13 @@ def create_deals(company_records):
             "name": [{"value": d["name"]}],
         }
 
-        # Deal value
+        # Deal value — built-in currency field
         if d.get("value"):
-            values["deal_value"] = d["value"]
+            values["value"] = [{"currency_value": d["value"], "currency_code": "USD"}]
 
-        # Close date
+        # Close date — custom date attribute
         if d.get("close_date"):
-            values["close_date"] = d["close_date"]
+            values["close_date"] = [{"value": d["close_date"]}]
 
         # Associated company
         company_idx = d.get("company_idx")
@@ -548,21 +550,21 @@ def create_deals(company_records):
                 "target_record_id": company_records[company_idx]["record_id"],
             }]
 
-        # Custom deal attributes
+        # Custom deal attributes — Attio v2 typed array format
         if d.get("champion"):
-            values["champion"] = d["champion"]
+            values["champion"] = [{"value": d["champion"]}]
         if d.get("use_case"):
-            values["use_case"] = d["use_case"]
+            values["use_case"] = [{"value": d["use_case"]}]
         if d.get("next_step"):
-            values["next_step"] = d["next_step"]
+            values["next_step"] = [{"value": d["next_step"]}]
         if d.get("probability") is not None:
-            values["probability"] = d["probability"]
+            values["probability"] = [{"value": d["probability"]}]
         if d.get("contract_months"):
-            values["contract_length_months"] = d["contract_months"]
+            values["contract_length_months"] = [{"value": d["contract_months"]}]
         if d.get("loss_reason"):
-            values["loss_reason"] = d["loss_reason"]
+            values["loss_reason"] = [{"option": {"title": d["loss_reason"]}}]
 
-        values["deal_lead_source"] = "Benchmark Seed"
+        values["deal_lead_source"] = [{"option": {"title": "Benchmark Seed"}}]
 
         payload = {"data": {"values": values}}
         result = api_call("POST", "/objects/deals/records", payload, d["name"])
@@ -572,8 +574,8 @@ def create_deals(company_records):
             deal_records.append({"record_id": record_id, "name": d["name"], "stage": d["stage"]})
             print(f"  [{i+1:2d}/50] {d['name']} (${d['value']:,}) -> {record_id[:12]}...")
 
-            # Update stage
-            stage_payload = {"data": {"values": {"stage": d["stage"]}}}
+            # Update stage — status fields require typed array format
+            stage_payload = {"data": {"values": {"stage": [{"status": {"title": d["stage"]}}]}}}
             api_call("PATCH", f"/objects/deals/records/{record_id}", stage_payload, f"stage:{d['stage']}")
         else:
             deal_records.append(None)
