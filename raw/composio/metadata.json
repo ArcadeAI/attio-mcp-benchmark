@@ -164,24 +164,64 @@
       "notes": ""
     }
   ],
+  "token_counts_per_file": {
+    "note": "Tokens counted with tiktoken cl100k_base on the full raw JSON response saved to disk",
+    "01-list-all-companies.json": 144363,
+    "02-deals-by-stage.json": 48792,
+    "03-deals-over-50k.json": 66752,
+    "04-companies-name-search.json": 48103,
+    "05-technology-companies.json": 165958,
+    "06-deals-by-close-date.json": 111829,
+    "07-compound-filter.json": 159032,
+    "08-sort-and-limit.json": 2254,
+    "total_saved_response_tokens": 747083
+  },
+  "total_tool_call_overhead": {
+    "note": "These are responses consumed during execution but NOT saved as benchmark files. They represent real LLM context cost.",
+    "initial_8query_batch_response_tokens": 467266,
+    "initial_8query_batch_response_bytes": 1332669,
+    "attio_list_attributes_companies_tokens": "~15000 (schema discovery for employee_range option slugs)",
+    "q07_attempt1_error_response_tokens": "~500 (invalid $in operator error)",
+    "q07_attempt2_error_response_tokens": "~500 (unknown option slug error)",
+    "q07_attempt3_final_response_tokens": 159032
+  },
   "summary": {
     "total_queries": 8,
     "expressible": 8,
     "not_expressible": 0,
-    "errors_encountered": 2
+    "total_saved_response_tokens": 747083,
+    "total_tool_calls_made": 13,
+    "note_on_token_bloat": "Composio wraps every Attio record with full temporal metadata (active_from, active_until, attribute_type, created_by actor objects) on every field of every record. A single company record expands to ~5800 tokens. This is pure wrapper overhead — the actual data payload is a tiny fraction."
   },
   "errors_encountered": [
     {
       "query": "07",
       "attempt": 1,
+      "tool": "ATTIO_LIST_COMPANIES",
+      "filter_used": {"$and": [{"categories": {"$eq": "Technology"}}, {"employee_range": {"$in": ["201-500", "501-1000", "1000+"]}}]},
       "error": "Invalid operator \"$in\" for field \"option\", must be one of (\"$eq\").",
-      "resolution": "Used $or + $eq instead of $in"
+      "resolution": "Switched to $or + $eq"
     },
     {
       "query": "07",
       "attempt": 2,
+      "tool": "ATTIO_LIST_COMPANIES",
+      "filter_used": {"$and": [{"categories": {"$eq": "Technology"}}, {"$or": [{"employee_range": {"$eq": "201-500"}}, {"employee_range": {"$eq": "501-1000"}}, {"employee_range": {"$eq": "1000+"}}]}]},
       "error": "Unknown select option name for option field constraint: 501-1000",
-      "resolution": "Used actual workspace option titles (5K-10K, 10K-50K, etc.) instead of benchmark schema reference values"
+      "resolution": "Called ATTIO_LIST_ATTRIBUTES to discover actual option titles in this workspace"
+    },
+    {
+      "query": "07",
+      "prereq_tool_call": "ATTIO_LIST_ATTRIBUTES",
+      "note": "Required an extra schema discovery call to learn that this workspace uses custom employee_range buckets (5K-10K, 10K-50K, 50K-100K, 100K+) rather than the standard 201-500/501-1000/1000+ values. This call returned ~40 attributes with full config, consuming significant context tokens before Q07 could succeed."
+    },
+    {
+      "query": "07",
+      "attempt": 3,
+      "tool": "ATTIO_LIST_COMPANIES",
+      "filter_used": {"$and": [{"categories": {"$eq": "Technology"}}, {"$or": [{"employee_range": {"$eq": "5K-10K"}}, {"employee_range": {"$eq": "10K-50K"}}, {"employee_range": {"$eq": "50K-100K"}}, {"employee_range": {"$eq": "100K+"}}]}]},
+      "error": null,
+      "resolution": "SUCCESS — 27 records returned"
     }
   ]
 }
