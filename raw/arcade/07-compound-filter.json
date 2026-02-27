@@ -1,0 +1,9 @@
+{
+  "tool": "Attio_QueryRecords",
+  "parameters": {
+    "object_type": "companies",
+    "fields": ["name", "categories", "employee_range"],
+    "filter_json": {"$and": [{"categories": {"$eq": "Technology"}}, {"$or": [{"employee_range": {"$eq": "1K-5K"}}, {"employee_range": {"$eq": "5K-10K"}}, {"employee_range": {"$eq": "10K-50K"}}, {"employee_range": {"$eq": "50K-100K"}}, {"employee_range": {"$eq": "100K+"}}]}]}
+  },
+  "response": {"pagination":{"count":6,"has_more":false,"limit":25,"offset":0},"records":[{"categories":"Technology","employee_range":"5K-10K","name":"Airbnb","record_id":"6c95d2e2-6ab0-4033-ba24-a61629896e04"},{"categories":"Technology","employee_range":"100K+","name":"Apple","record_id":"b157348d-4f09-4ebe-80c5-9e92d3e10de0"},{"categories":"Technology","employee_range":"100K+","name":"Google","record_id":"c703e89f-e978-4d9f-8edc-98a313462ffd"},{"categories":"Publishing","employee_range":"1K-5K","name":"Intercom","record_id":"cfe4204f-0d4e-41fa-b4d5-ec92cd7b74a0"},{"categories":"Publishing","employee_range":"100K+","name":"Microsoft","record_id":"d8a9ee68-06eb-45d6-af31-9d96d60513d1"},{"categories":"Insurance","employee_range":"10K-50K","name":"PayPal","record_id":"fc285e40-feed-4a14-914e-8389dd397d6f"}]}
+}

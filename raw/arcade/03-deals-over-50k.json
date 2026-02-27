@@ -1,0 +1,9 @@
+{
+  "tool": "Attio_QueryRecords",
+  "parameters": {
+    "object_type": "deals",
+    "fields": ["name", "value"],
+    "filter_json": {"value": {"$gt": 50000}}
+  },
+  "response": {"pagination":{"count":0,"has_more":false,"limit":25,"offset":0},"records":[]}
+}

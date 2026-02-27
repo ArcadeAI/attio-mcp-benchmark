@@ -1,0 +1,9 @@
+{
+  "tool": "Attio_QueryRecords",
+  "parameters": {
+    "object_type": "companies",
+    "fields": ["name"],
+    "filter_json": {"name": {"$contains": "Tech"}}
+  },
+  "response": {"pagination":{"count":0,"has_more":false,"limit":25,"offset":0},"records":[]}
+}

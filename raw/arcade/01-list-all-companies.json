@@ -1,0 +1,9 @@
+{
+  "tool": "Attio_QueryRecords",
+  "parameters": {
+    "object_type": "companies",
+    "fields": ["name"],
+    "limit": 25
+  },
+  "response": {"pagination":{"count":10,"has_more":false,"limit":25,"offset":0},"records":[{"name":"LVMH","record_id":"38eaeda4-e90c-4f5c-a3de-95193421a5e1"},{"name":"Airbnb","record_id":"6c95d2e2-6ab0-4033-ba24-a61629896e04"},{"name":"Disney","record_id":"7cafa433-594f-4215-a7fa-9a85c0251d26"},{"name":"Attio","record_id":"9cb40e7b-6889-479e-ac58-6d6e195a55da"},{"name":"Apple","record_id":"b157348d-4f09-4ebe-80c5-9e92d3e10de0"},{"name":"Google","record_id":"c703e89f-e978-4d9f-8edc-98a313462ffd"},{"name":"United Airlines","record_id":"c82a98ac-8a64-4080-b2b3-3d00b5522cb9"},{"name":"Intercom","record_id":"cfe4204f-0d4e-41fa-b4d5-ec92cd7b74a0"},{"name":"Microsoft","record_id":"d8a9ee68-06eb-45d6-af31-9d96d60513d1"},{"name":"PayPal","record_id":"fc285e40-feed-4a14-914e-8389dd397d6f"}]}
+}

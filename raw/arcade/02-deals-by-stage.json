@@ -1,0 +1,10 @@
+{
+  "tool": "Attio_QueryRecords",
+  "parameters": {
+    "object_type": "deals",
+    "fields": ["name", "stage"],
+    "filter_json": {"stage": {"$eq": "Nurture"}}
+  },
+  "response": null,
+  "error": "[TOOL_RUNTIME_FATAL] FatalToolError during execution of tool 'query_records': Attio API error: Unknown status for status field constraint: Nurture. Path: ['stage']"
+}
